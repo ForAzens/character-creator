@@ -38,4 +38,45 @@
   width: 50%;
 }
 
+@media (max-width: 768px) {
+  .characterEditor {
+    padding-top: 64px;
+
+    isolation: isolate;
+  }
+
+  .header {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+
+  .characterWrapper {
+    width: 100%;
+    padding: 0;
+
+    padding-top: 32px;
+
+    z-index: 1;
+    position: sticky;
+  }
+
+  .stretchetOut {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+  .controlColumn {
+    width: 100%;
+
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  .controlColumn > * {
+    width: 90%;
+  }
 }
